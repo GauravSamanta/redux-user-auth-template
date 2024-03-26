@@ -2,9 +2,7 @@ import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
 const backendURL =
-  process.env.NODE_ENV !== 'production'
-    ? 'http://127.0.0.1:5000'
-    : import.meta.env.VITE_SERVER_URL
+ 'https://redux-user-backend.onrender.com'
 
 export const userLogin = createAsyncThunk(
   'auth/login',
