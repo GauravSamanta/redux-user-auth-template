@@ -14,10 +14,6 @@ const __dirname = path.resolve()
 dotenv.config()
 
 // configure env file in production
-if (process.env.NODE_ENV === undefined) {
-  dotenv.config({ path: './env' })
-}
-
 // Connect to database
 connectDB()
 
